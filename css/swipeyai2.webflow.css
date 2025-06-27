@@ -1,0 +1,250 @@
+body {
+  color: #333;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.page-wrapper.chage {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  inset: 0%;
+}
+
+.page-wrapper._2-wrap {
+  z-index: 2;
+  display: block;
+  position: relative;
+}
+
+.main-wrapper {
+  margin-bottom: -5px;
+  margin-left: -5px;
+  margin-right: -5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.paddding-global {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.paddding-global.is-relative {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.container-large {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+}
+
+.container-large.is-relative {
+  position: relative;
+}
+
+.section_hero {
+  background-image: linear-gradient(48deg, #371732, #ef168f 31%, #8e1fe0 64%, #190724);
+  flex-flow: column;
+  justify-content: center;
+  min-height: 100dvh;
+  display: flex;
+}
+
+.hero_cta {
+  flex-flow: column;
+  align-items: center;
+  max-width: 50%;
+  display: flex;
+}
+
+.hero_cta._55 {
+  max-width: 39.375rem;
+}
+
+.hero_wrapper {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.hero_logo {
+  max-height: 65px;
+}
+
+.martop-xsmall {
+  margin-top: 1rem;
+}
+
+.martop-medium {
+  margin-top: 2rem;
+}
+
+.martop-medium.is-width-100 {
+  width: 100%;
+}
+
+.button {
+  pointer-events: auto;
+  background-image: linear-gradient(#ff8aa4, #ff4a72);
+  border-radius: 100px;
+  justify-content: center;
+  width: 100%;
+  max-width: 494px;
+  padding: 20px 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  box-shadow: 0 2px 10px 3px #ffffff40;
+}
+
+.button-wrapper {
+  margin-top: 2rem;
+}
+
+.hero_image {
+  object-fit: contain;
+  object-position: 50% 100%;
+  max-width: 50%;
+  min-height: 100dvh;
+  max-height: 100dvh;
+  position: absolute;
+  top: 1rem;
+  bottom: 0;
+}
+
+.body {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1440px) {
+  .page-wrapper.chage {
+    display: block;
+  }
+
+  .page-wrapper._2-wrap {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .button {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .hero_image {
+    max-width: 85%;
+    inset: -10% -10% -10% -15%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .paddding-global.is-relative {
+    display: none;
+  }
+
+  .section_hero {
+    background-image: url('../images/tetya-davalka.webp'), linear-gradient(48deg, #371732, #ef168f 31%, #8e1fe0 64%, #190724);
+    background-position: 0 0, 0 0;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;
+  }
+
+  .section_hero._2 {
+    background-image: url('../images/97d90667c488de2e0301e7b4dc89a295.webp'), linear-gradient(48deg, #371732, #ef168f 31%, #8e1fe0 64%, #190724);
+    background-position: 0 0, 0 0;
+    background-size: cover, auto;
+  }
+
+  .hero_cta {
+    z-index: 2;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .hero_cta._55 {
+    max-width: 43.75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero_image {
+    max-width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section_hero {
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+  }
+
+  .hero_cta {
+    align-items: flex-start;
+    max-width: 600px;
+  }
+
+  .hero_cta._55 {
+    max-width: 25rem;
+    margin-left: 0;
+  }
+
+  .hero_wrapper {
+    justify-content: flex-start;
+  }
+
+  .hero_logo {
+    max-height: 35px;
+  }
+
+  .button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+  }
+
+  .heading {
+    text-align: left;
+    font-size: 2.125rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .paddding-global {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section_hero {
+    background-image: url('../images/tetya-davalka.webp'), linear-gradient(48deg, #371732, #ef168f 31%, #8e1fe0 64%, #190724);
+    background-position: 0 0, 0 0;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;
+  }
+}
+
+
